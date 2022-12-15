@@ -49,7 +49,7 @@ const [noResultado, setNoResultado] = useState('')
 
   return (
     <ClimaContext.Provider
-      value={{ busqueda, datosBusqueda, consultarClima, resultado, cargando,noResultado }}
+      value={{ busqueda, datosBusqueda, consultarClima, resultado, cargando,noResultado, setResultado }}
     >
       {children}
     </ClimaContext.Provider>

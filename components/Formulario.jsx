@@ -5,10 +5,11 @@ const Formulario = () => {
 
     const [alerta,setAlerta] = useState('')
     
-    const {busqueda, datosBusqueda,consultarClima} = useClima()
+    const {busqueda, datosBusqueda,consultarClima, setResultado} = useClima()
 
 const handleSubmit = e => {
     e.preventDefault()
+    setResultado({})
 
     if(Object.values(busqueda).includes('')) {
         setAlerta('Todos los campos son obligatorios')
