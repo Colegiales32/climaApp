@@ -31,7 +31,7 @@ const [noResultado, setNoResultado] = useState('')
 
       const appId = import.meta.env.VITE_API_KEY;
 
-      const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${appId}`;
+      const url = `https://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${appId}`;
 
       const { data } = await axios(url);
       console.log(data[0]);
